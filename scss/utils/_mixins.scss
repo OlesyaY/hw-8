@@ -30,3 +30,21 @@
   line-height: 1.14;
   padding-inline-start: 0;
 }
+
+@mixin for-phone-only {
+  @media (max-width: $mobile) {
+    @content;
+  }
+}
+
+@mixin for-tablet {
+  @media (min-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin for-desktop {
+  @media (min-width: $desctop) {
+    @content;
+  }
+}

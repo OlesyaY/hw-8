@@ -22,7 +22,11 @@
 
 .menu {
   @extend %list;
-  display: flex;
+  display: none;
+
+  @include for-tablet {
+    display: flex;
+  }
 
   &__item:not(:last-child) {
     margin-right: 40px;
@@ -55,10 +59,14 @@
 
 .contact-list {
   @extend %list;
-  display: flex;
+  display: none;
   margin-left: auto;
   margin-block-start: 0px;
   margin-block-end: 0px;
+
+  @include for-tablet {
+    display: flex;
+  }
 
   &__link {
     @extend %link;
