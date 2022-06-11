@@ -1,0 +1,21 @@
+@import "./utils/mixins";
+@import "./utils/placeholder";
+@import "./utils/variables";
+@import "./utils/breakpoints";
+
+@import "./common";
+@import "./reset";
+
+@import "./components/benefits";
+@import "./components/servise";
+@import "./components/clients";
+@import "./components/modal";
+@import "./components/footer";
+@import "./components/main-section";
+@import "./components/team";
+@import "./components/project";
+@import "./components/catalog";
+@import "./components/header";
+@import "./components/contact-form";
+
+@import "./layout/conteiner";

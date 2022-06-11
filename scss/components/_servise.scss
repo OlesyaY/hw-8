@@ -1,0 +1,53 @@
+.servise {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    &__caption {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.16;
+        text-align: center;
+        margin-block-start: 0;
+        margin-block-end: 0;
+        margin-bottom: 50px;
+    }
+
+    &__list {
+        display: flex;
+        margin-block-start: 0px;
+        margin-block-end: 0px;
+        padding-inline-start: 0px;
+    }
+
+    &__item {
+        width: 370px;
+        display: flex;
+        position: relative;
+        margin-right: 30px;
+    }
+
+    &__item:last-child {
+        margin-right: 0;
+    }
+
+    &__text {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 70px;
+        background-color: rgba(47, 48, 58, 0.8);
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+}

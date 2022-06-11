@@ -1,0 +1,85 @@
+.headbord {
+  border-bottom: 1px solid #ececec;
+
+  &__nav {
+    @extend %link;
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    color: var(--main-color);
+    text-decoration: none;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    margin-right: 93px;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.19;
+    font-family: Raleway, sans-serif;
+  }
+}
+
+.menu {
+  @extend %list;
+  display: flex;
+
+  &__item:not(:last-child) {
+    margin-right: 40px;
+  }
+
+  &__link {
+    @extend %link;
+    display: block;
+    position: relative;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  &__link--active {
+    color: var(--accent-color);
+  }
+
+  &__link--active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 4px;
+    background: #2196f3;
+    border-radius: 2px;
+  }
+}
+
+.contact-list {
+  @extend %list;
+  display: flex;
+  margin-left: auto;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+
+  &__link {
+    @extend %link;
+    color: var(--secondary-color);
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    align-items: center;
+  }
+
+  &__item + &__item {
+    margin-left: 50px;
+  }
+
+  &__icon {
+    fill: currentColor;
+    margin-right: 10px;
+  }
+
+  &__icon:hover,
+  &__icon:focus {
+    color: var(--accent-color);
+  }
+}

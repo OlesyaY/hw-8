@@ -1,0 +1,134 @@
+.footbar {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #2f303a;
+
+  &__container {
+    display: flex;
+    align-items: baseline;
+  }
+
+  &__logo {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.19;
+    font-family: Raleway, sans-serif;
+    text-decoration: none;
+    color: #ffffff;
+  }
+}
+
+.footbar-address {
+  font-style: normal;
+
+  &__text {
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 1.71;
+    margin-bottom: 9px;
+  }
+}
+
+.footbar-contact {
+  @extend %list;
+
+  &__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+
+  &__link {
+    @extend %link;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.socials-list {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding-inline-start: 0px;
+
+  &__item:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    color: #ffffff;
+  }
+
+  &__link:hover,
+  &__link:focus {
+    background-color: var(--accent-color);
+    fill: #ffffff;
+  }
+
+  &__link:hover &__icon,
+  &__link:focus &__icon {
+    fill: #ffffff;
+  }
+
+  &__icon {
+    fill: #ffffff;
+  }
+}
+
+.join {
+  margin-left: 70px;
+
+  &__caption {
+    @extend %caption;
+  }
+}
+
+.subscription {
+  margin-left: 93px;
+
+  &__caption {
+    @extend %caption;
+  }
+}
+
+.subscription-form {
+  display: flex;
+
+  &__email {
+    width: 358px;
+    padding: 15px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    outline: transparent;
+    background-color: transparent;
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    margin-left: 12px;
+    text-align: left;
+    font-weight: 700;
+    font-size: 16px;
+    color: #ffffff;
+    line-height: 1.87;
+    font-family: inherit;
+    background-color: var(--accent-color);
+    border-radius: 4px;
+    padding: 10px 29px;
+    border: unset;
+  }
+
+  &__icon {
+    margin-left: 10px;
+    fill: #ffffff;
+  }
+}

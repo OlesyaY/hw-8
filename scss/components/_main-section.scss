@@ -1,0 +1,30 @@
+.main-section {
+    max-width: 1600px;
+    margin: 0 auto;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url("../images/overlay.jpg");
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-size: cover;
+
+    color: #ffffff;
+    background-color: #2f303a;
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+    &__description {
+        font-weight: 900;
+
+        font-size: 44px;
+        line-height: 1.36;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        width: 696px;
+        margin: 0px auto 30px auto;
+    }
+
+    &__btn {
+        @include main-btn;
+    }
+}
