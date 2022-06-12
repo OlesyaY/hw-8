@@ -1,10 +1,12 @@
 .headbord {
+  position: relative;
   border-bottom: 1px solid #ececec;
 
   &__nav {
     @extend %link;
     display: flex;
     align-items: center;
+    justify-content: space-between;
   }
 
   &__logo {
@@ -65,20 +67,31 @@
   margin-block-end: 0px;
 
   @include for-tablet {
+    display: block;
+
+    &__item:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  @include for-desktop {
     display: flex;
+
+    &__item + &__item {
+      margin-left: 50px;
+    }
   }
 
   &__link {
     @extend %link;
     color: var(--secondary-color);
     display: flex;
-    padding-top: 32px;
-    padding-bottom: 32px;
     align-items: center;
-  }
 
-  &__item + &__item {
-    margin-left: 50px;
+    @include for-desktop {
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
   }
 
   &__icon {
@@ -90,4 +103,33 @@
   &__icon:focus {
     color: var(--accent-color);
   }
+}
+
+.menu-button {
+  display: inline-flex;
+  z-index: 3;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  @include for-tablet {
+    display: none;
+  }
+}
+.menu-button:hover .menu-button__icon,
+.menu-button:focus .menu-button__icon {
+  fill: var(--accent-color);
+}
+
+.menu-button .icon-close {
+  display: none;
+}
+
+.menu-button.is-open .icon-close {
+  display: block;
+}
+
+.menu-button.is-open .icon-menu {
+  display: none;
 }

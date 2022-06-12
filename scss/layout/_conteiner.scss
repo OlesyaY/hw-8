@@ -1,7 +1,10 @@
 .conteiner {
     padding: 0px 15px;
     margin: 0 auto;
-    width: $mobile;
+
+    @include for-phone {
+        width: $mobile;
+    }
 
     @include for-tablet {
         width: $tablet;
