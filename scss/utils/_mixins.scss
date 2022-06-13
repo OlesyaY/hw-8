@@ -49,8 +49,20 @@
   }
 }
 
+@mixin for-tablet-only {
+  @media screen and (min-width: $tablet) and (max-width: $desctop) {
+    @content;
+  }
+}
+
 @mixin for-desktop {
   @media screen and (min-width: $desctop) {
+    @content;
+  }
+}
+
+@mixin for-mobile-tablet {
+  @media screen and (max-width: 1199px) {
     @content;
   }
 }
