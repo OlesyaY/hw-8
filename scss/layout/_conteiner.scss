@@ -17,7 +17,7 @@
     &--centered {
         @include for-tablet {
             display: flex;
-            align-items: center;
+            align-items: center; 
         }
     }
 

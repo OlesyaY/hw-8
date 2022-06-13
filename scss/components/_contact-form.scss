@@ -70,21 +70,27 @@
 
     &__policy-group {
         display: flex;
+        white-space: nowrap;
         align-items: center;
-        justify-content: center;
+        justify-content: start;
         padding: 10px 1px;
         margin-bottom: 30px;
     }
 
     &__policy-description {
-        text-align: center;
         justify-content: center;
         font-family: "Roboto";
-        font-size: 14px;
-        line-height: 1.71px;
+        font-size: 12px;
+        line-height: 1.16;
         letter-spacing: 0.03em;
 
         color: #757575;
+
+        @include for-desktop {
+            font-size: 14px;
+            line-height: 1.71;
+            text-align: center;
+        }
     }
 
     &__policy-description-link {

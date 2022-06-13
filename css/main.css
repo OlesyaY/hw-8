@@ -400,10 +400,17 @@ ul {
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  min-height: 581px;
-  min-width: 528px;
+  min-height: 609px;
+  min-width: 450px;
   background-color: #ffffff;
   padding: 40px;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    min-height: 581px;
+    min-width: 528px;
+  }
 }
 
 .modal__close-btn {
@@ -613,26 +620,60 @@ ul {
 .main-section {
   max-width: 1600px;
   margin: 0 auto;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/overlay.jpg");
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/overlay.jpg");
   background-repeat: no-repeat;
   background-position: center 0;
   background-size: cover;
   color: #ffffff;
   background-color: #2f303a;
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  /* Chrome/Edge/Opera/Samsung, Safari will fallback to this as well */
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), -webkit-image-set(url("/images/mobile/overlay.jpg") 1x, url("/images/mobile/overlay-2x.jpg") 2x);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), -webkit-image-set(url("/images/mobile/overlay.jpg") 1x, url("/images/mobile/overlay-2x.jpg") 2x);
+  /* Standard use */
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), image-set("/images/mobile/overlay.jpg" 1x, "/images/mobile/overlay-2x.jpg" 2x);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), image-set("/images/mobile/overlay.jpg" 1x, "/images/mobile/overlay-2x.jpg" 2x);
+}
+
+@media screen and (min-width: 768px) {
+  .main-section {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), -webkit-image-set(url("/images/tablet/overlay.jpg") 1x, url("/images/tablet/overlay-2x.jpg") 2x);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), -webkit-image-set(url("/images/tablet/overlay.jpg") 1x, url("/images/tablet/overlay-2x.jpg") 2x);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), image-set("/images/tablet/overlay.jpg" 1x, "/images/tablet/overlay-2x.jpg" 2x);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), image-set("/images/tablet/overlay.jpg" 1x, "/images/tablet/overlay-2x.jpg" 2x);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .main-section {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), -webkit-image-set(url("/images/overlay.jpg") 1x, url("/images/overlay-2x.jpg") 2x);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), -webkit-image-set(url("/images/overlay.jpg") 1x, url("/images/overlay-2x.jpg") 2x);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), image-set("/images/overlay.jpg" 1x, "/images/overlay-2x.jpg" 2x);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), image-set("/images/overlay.jpg" 1x, "/images/overlay-2x.jpg" 2x);
+  }
 }
 
 .main-section__description {
+  font-family: "Roboto";
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-transform: uppercase;
+  font-size: 26px;
+  line-height: 42px;
+  width: 360px;
+  text-align: center;
   letter-spacing: 0.06em;
-  width: 696px;
+  text-transform: uppercase;
   margin: 0px auto 30px auto;
+}
+
+@media screen and (min-width: 1200px) {
+  .main-section__description {
+    font-size: 44px;
+    line-height: 1.36;
+    width: 696px;
+  }
 }
 
 .main-section__btn {
@@ -1185,26 +1226,34 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  white-space: nowrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
   padding: 10px 1px;
   margin-bottom: 30px;
 }
 
 .contact-form__policy-description {
-  text-align: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   font-family: "Roboto";
-  font-size: 14px;
-  line-height: 1.71px;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: #757575;
+}
+
+@media screen and (min-width: 1200px) {
+  .contact-form__policy-description {
+    font-size: 14px;
+    line-height: 1.71;
+    text-align: center;
+  }
 }
 
 .contact-form__policy-description-link {
