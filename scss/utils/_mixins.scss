@@ -50,13 +50,13 @@
 }
 
 @mixin for-tablet-only {
-  @media screen and (min-width: $tablet) and (max-width: $desctop) {
+  @media screen and (min-width: $tablet) and (max-width: $desktop) {
     @content;
   }
 }
 
 @mixin for-desktop {
-  @media screen and (min-width: $desctop) {
+  @media screen and (min-width: $desktop) {
     @content;
   }
 }
