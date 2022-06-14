@@ -828,6 +828,12 @@ ul {
   }
 }
 
+@media screen and (max-width: 480px) {
+  .team__photo {
+    width: 100%;
+  }
+}
+
 .team__desc {
   padding-top: 30px;
   padding-bottom: 30px;

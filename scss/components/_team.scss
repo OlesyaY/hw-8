@@ -65,6 +65,12 @@
         }
     }
 
+    &__photo {
+        @include for-phone-only {
+            width: 100%;
+        }
+    }
+
     &__desc {
         padding-top: 30px;
         padding-bottom: 30px;
@@ -81,6 +87,7 @@
         line-height: 1.35;
         margin-bottom: 16px;
     }
+
     &__socials {
         display: flex;
         justify-content: center;
