@@ -19,6 +19,8 @@
   line-height: 1.14;
   -webkit-padding-start: 0;
           padding-inline-start: 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .catalog__item {

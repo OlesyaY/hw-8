@@ -4,19 +4,26 @@
 
     &__list {
         display: flex;
+        flex-wrap: wrap;
+
         align-items: center;
         justify-content: center;
-
         margin-bottom: 50px;
-
         font-family: Roboto, sans-serif;
         font-size: 14px;
         line-height: 1.14;
         padding-inline-start: 0;
+
+        @include for-phone-only {
+            justify-content: start;
+        }
     }
 
     &__item {
         margin-right: 8px;
+        @include for-phone-only {
+            margin-bottom: 8px;
+        }
     }
 
     &__item:last-child {
