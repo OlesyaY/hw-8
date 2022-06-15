@@ -4,8 +4,16 @@
   background-color: #2f303a;
 
   &__container {
-    display: flex;
+    display: block;
     align-items: baseline;
+    justify-content: center;
+    text-align: center;
+
+    @include for-desktop {
+      display: flex;
+      text-align: left;
+      justify-content: start;
+    }
   }
 
   &__logo {
@@ -17,6 +25,20 @@
     font-family: Raleway, sans-serif;
     text-decoration: none;
     color: #ffffff;
+  }
+
+  &__wraper {
+    @include for-tablet-only {
+      display: flex;
+      margin-right: 74px;
+      margin-left: 61px;
+      justify-content: space-between;
+    }
+
+    @include for-desktop {
+      display: flex;
+      align-items: baseline;
+    }
   }
 }
 
@@ -83,15 +105,27 @@
 }
 
 .join {
-  margin-left: 70px;
+  margin-top: 60px;
+  @include for-desktop {
+    margin-left: 70px;
+  }
 
   &__caption {
     @extend %caption;
   }
+
+  @include for-tablet {
+    margin-top: 0px;
+  }
 }
 
 .subscription {
-  margin-left: 93px;
+  margin-top: 60px;
+
+  @include for-desktop {
+    margin-left: 93px;
+    margin-top: 0px;
+  }
 
   &__caption {
     @extend %caption;
@@ -101,20 +135,35 @@
 .subscription-form {
   display: flex;
 
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @include for-tablet-only {
+    flex-flow: column;
+    align-items: center;
+  }
+
   &__email {
-    width: 358px;
+    width: 450px;
     padding: 15px 16px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     outline: transparent;
     background-color: transparent;
+
+    @include for-desktop {
+      width: 358px;
+
+      flex-wrap: nowrap;
+      justify-content: start;
+    }
   }
 
   &__btn {
     display: flex;
     align-items: center;
-    margin-left: 12px;
+    margin-top: 20px;
     text-align: left;
     font-weight: 700;
     font-size: 16px;
@@ -125,6 +174,11 @@
     border-radius: 4px;
     padding: 10px 29px;
     border: unset;
+
+    @include for-desktop {
+      margin-left: 12px;
+      margin-top: 0px;
+    }
   }
 
   &__icon {
