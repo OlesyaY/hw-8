@@ -1111,6 +1111,12 @@ ul {
   overflow: hidden;
 }
 
+@media screen and (max-width: 767px) {
+  .project__img {
+    width: 100%;
+  }
+}
+
 .project__overlay {
   display: inline-block;
   content: "";
