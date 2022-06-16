@@ -819,19 +819,19 @@ ul {
   padding-top: 118px;
   padding-bottom: 118px;
   /* Chrome/Edge/Opera/Samsung, Safari will fallback to this as well */
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), -webkit-image-set(url("/images/mobile/overlay.jpg") 1x, url("/images/mobile/overlay-2x.jpg") 2x);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), -webkit-image-set(url("/images/mobile/overlay.jpg") 1x, url("/images/mobile/overlay-2x.jpg") 2x);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), -webkit-image-set(url("../images/mobile/overlay.jpg") 1x, url("../images/mobile/overlay-2x.jpg") 2x);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), -webkit-image-set(url("../images/mobile/overlay.jpg") 1x, url("../images/mobile/overlay-2x.jpg") 2x);
   /* Standard use */
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), image-set("/images/mobile/overlay.jpg" 1x, "/images/mobile/overlay-2x.jpg" 2x);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), image-set("/images/mobile/overlay.jpg" 1x, "/images/mobile/overlay-2x.jpg" 2x);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), image-set("../images/mobile/overlay.jpg" 1x, "../images/mobile/overlay-2x.jpg" 2x);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), image-set("../images/mobile/overlay.jpg" 1x, "../images/mobile/overlay-2x.jpg" 2x);
 }
 
 @media screen and (min-width: 768px) {
   .main-section {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), -webkit-image-set(url("/images/tablet/overlay.jpg") 1x, url("/images/tablet/overlay-2x.jpg") 2x);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), -webkit-image-set(url("/images/tablet/overlay.jpg") 1x, url("/images/tablet/overlay-2x.jpg") 2x);
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), image-set("/images/tablet/overlay.jpg" 1x, "/images/tablet/overlay-2x.jpg" 2x);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), image-set("/images/tablet/overlay.jpg" 1x, "/images/tablet/overlay-2x.jpg" 2x);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), -webkit-image-set(url("../images/tablet/overlay.jpg") 1x, url("../images/tablet/overlay-2x.jpg") 2x);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), -webkit-image-set(url("../images/tablet/overlay.jpg") 1x, url("../images/tablet/overlay-2x.jpg") 2x);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), image-set("../images/tablet/overlay.jpg" 1x, "../images/tablet/overlay-2x.jpg" 2x);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), image-set("../images/tablet/overlay.jpg" 1x, "../images/tablet/overlay-2x.jpg" 2x);
   }
 }
 
@@ -839,10 +839,10 @@ ul {
   .main-section {
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), -webkit-image-set(url("/images/overlay.jpg") 1x, url("/images/overlay-2x.jpg") 2x);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), -webkit-image-set(url("/images/overlay.jpg") 1x, url("/images/overlay-2x.jpg") 2x);
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), image-set("/images/overlay.jpg" 1x, "/images/overlay-2x.jpg" 2x);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), image-set("/images/overlay.jpg" 1x, "/images/overlay-2x.jpg" 2x);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), -webkit-image-set(url("../images/overlay.jpg") 1x, url("../images/overlay-2x.jpg") 2x);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), -webkit-image-set(url("../images/overlay.jpg") 1x, url("../images/overlay-2x.jpg") 2x);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), image-set("../images/overlay.jpg" 1x, "../images/overlay-2x.jpg" 2x);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), image-set("../images/overlay.jpg" 1x, "../images/overlay-2x.jpg" 2x);
   }
 }
 
