@@ -35,12 +35,8 @@
     }
 
     &__item {
-        @include for-mobile-tablet {
-            margin-bottom: 30px;
-        }
-
         @include for-tablet-only {
-            width: calc((100% - 4 * 15px) / 2);
+            width: calc((100% - 30px) / 2);
         }
 
         @include for-desktop {
@@ -51,6 +47,18 @@
 
     &__item:last-child {
         margin-right: 0;
+    }
+
+    &__item:not(:last-child) {
+        @include for-phone-only {
+            margin-bottom: 30px;
+        }
+    }
+
+    &__item:nth-last-child(n + 3) {
+        @include for-tablet-only {
+            margin-bottom: 30px;
+        }
     }
 
     &__icon-wrapper {

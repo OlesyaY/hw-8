@@ -26,14 +26,16 @@
 
     &__item {
         margin-right: 8px;
-
-        @include for-phone-only {
-            margin-bottom: 8px;
-        }
     }
 
     &__item:last-child {
         margin-right: 0px;
+    }
+
+    &__item:nth-last-child(n + 3) {
+        @include for-phone-only {
+            margin-bottom: 8px;
+        }
     }
 
     &__btn {

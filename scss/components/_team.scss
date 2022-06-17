@@ -45,17 +45,28 @@
         border-radius: 0px 0px 4px 4px;
         background-color: #ffffff;
 
-        @include for-mobile-tablet {
-            margin-bottom: 30px;
-        }
-
         @include for-tablet-only {
-            flex-basis: calc((100% - 4 * 15px) / 2);
+            flex-basis: calc((100% - 30px) / 2);
         }
 
         @include for-desktop {
             width: 270px;
+        }
+    }
+
+    &__link:not(:last-child) {
+        @include for-phone-only {
+            margin-bottom: 30px;
+        }
+
+        @include for-desktop {
             margin-right: 30px;
+        }
+    }
+
+    &__link:nth-last-child(n + 3) {
+        @include for-tablet-only {
+            margin-bottom: 30px;
         }
     }
 
