@@ -35,6 +35,24 @@
         }
     }
 
+    &__item:last-child {
+        @include for-phone-only {
+            margin-bottom: 0px;
+        }
+    }
+
+    &__item:nth-child(3n) {
+        @include for-desktop {
+            margin-right: 0px;
+        }
+    }
+
+    &__item:nth-last-child(-n + 3) {
+        @include for-desktop {
+            margin-bottom: 0px;
+        }
+    }
+
     &__link {
         text-decoration: none;
         display: block;
@@ -81,16 +99,6 @@
         line-height: 28px;
         letter-spacing: 0.03em;
         color: #ffffff;
-    }
-
-    &__item:nth-child(3n) {
-        @include for-desktop {
-            margin-right: 0px;
-        }
-    }
-
-    &__item:nth-last-child(-n + 3) {
-        margin-bottom: 0px;
     }
 
     &__elements {
